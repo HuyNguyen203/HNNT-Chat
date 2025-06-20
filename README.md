@@ -1,8 +1,7 @@
 # 💬 Chat App Project – New Technologies in IT Application Development
 
-Dự án này được phát triển trong khuôn khổ môn học **Công nghệ mới trong phát triển ứng dụng CNTT**. Ứng dụng chat đa nền tảng hỗ trợ realtime, quản lý người dùng, xác thực OTP và đồng bộ dữ liệu giữa thiết bị di động và trình duyệt.
-
-## 🗂️ Cấu trúc dự án
+This project is developed within the framework of the subject New Technology in IT Application Development. Cross-platform chat application supports realtime, user management, OTP authentication and data synchronization between mobile devices and browsers.
+## 🗂️ Project structure
 
 ```
 SUBJECT-PROJECT\_\_New-Technologies-in-IT-Application-Development/
@@ -14,7 +13,7 @@ SUBJECT-PROJECT\_\_New-Technologies-in-IT-Application-Development/
 
 ```
 
-## 🚀 Công nghệ sử dụng
+## 🚀 Technical
 
 ### Frontend
 
@@ -32,7 +31,7 @@ SUBJECT-PROJECT\_\_New-Technologies-in-IT-Application-Development/
 
 ---
 
-## 🧰 Yêu cầu hệ thống
+## 🧰 System requirements
 
 - Node.js ≥ 18.x
 - PostgreSQL / MySQL
@@ -42,20 +41,20 @@ SUBJECT-PROJECT\_\_New-Technologies-in-IT-Application-Development/
 
 ---
 
-## ⚙️ Hướng dẫn cài đặt
+## ⚙️ Installation instructions
 
-### 1. Cài đặt Backend
+### 1. For Backend
 
 ```bash
 cd hnnt-chat-server
 npm install
 ```
 
-#### Thiết lập biến môi trường
+#### Set environment variables
 
 Tạo file `.env` trong `hnnt-chat-server/` dựa theo `.env.sample`. Cập nhật thông tin kết nối DB, JWT secret, Redis, AWS, v.v.
 
-#### Thực thi migration
+#### Run migration
 
 ```bash
 npx prisma migrate deploy
@@ -63,7 +62,7 @@ npx prisma migrate deploy
 
 > ✅ Lệnh này sẽ áp dụng toàn bộ migration SQL đã được tạo sẵn lên cơ sở dữ liệu.
 
-#### Seed dữ liệu mẫu
+#### Seed sample data
 
 ```bash
 npm run seed
@@ -77,7 +76,7 @@ npm start
 
 ---
 
-### 2. Cài đặt ứng dụng Mobile (Expo)
+### 2. Mobile Settings (Expo)
 
 ```bash
 cd hnnt-chat-mobile
@@ -85,11 +84,11 @@ npm install
 npx expo start
 ```
 
-> Mở camera quét mã QR để test trên điện thoại với Expo Go.
+> Scan QA code in Expo Go.
 
 ---
 
-### 3. Cài đặt ứng dụng Web
+### 3. Web Settings 
 
 ```bash
 cd hnnt-chat-web
@@ -101,42 +100,41 @@ npm start
 
 ---
 
-## 🌟 Tính năng nổi bật
+## 🌟 Outstanding features
 
-### 🧑‍💻 Người dùng
+### 🧑‍💻 User
 
-- Đăng ký, đăng nhập, xác thực OTP
-- Quản lý tài khoản, avatar, trạng thái hoạt động
+- Reegister, Login, Authentication with OTP
+- Account management, Profile management, Status
 
 ### 💬 Chat & Tin nhắn
 
-- Chat cá nhân, nhóm
-- Gửi/nhận tin nhắn đa phương tiện (ảnh, video, file, audio)
-- Ghim, xoá, thu hồi tin nhắn
-- Phản ứng tin nhắn (emoji)
-- Tìm kiếm tin nhắn theo từ khoá
+- Chat one-one, participating group
+- Send/recieve message (text, image, icon, sticker video, file, audio)
+- Pin, Delete, Reply Reaction for message
+- Find message, contact, number
 
-### 📲 Đồng bộ & Thông báo
+### 📲 Sync & Notification
 
-- Realtime với Socket.io
-- Đồng bộ nhiều thiết bị
-- Thông báo đẩy (push notification – nếu triển khai)
+- Realtime with Socket.io
+- Sync multiple devices
+- Push notification (if implemented)
 
 ---
 
-## 📜 Các lệnh hữu ích
+## 📜 Useful commands
 
 | Lệnh                | Mô tả                                |
 | ------------------- | ------------------------------------ |
-| `npm run dev`       | Khởi động server backend với Nodemon |
-| `npm run migrate`   | Chạy migration cập nhật DB           |
-| `npm run seed`      | Thêm dữ liệu mẫu vào DB              |
-| `npx prisma studio` | Mở giao diện web quản lý DB          |
+| `npm run dev`       | Start backend server with Nodemon    |
+| `npm run migrate`   | Run migration to update DB           |
+| `npm run seed`      | Add sample data to DB                |
+| `npx prisma studio` | Open DB management web interface     |
 
 ---
 
-## 🤝 Đóng góp
+## 🤝 Contribute
 
-Mọi đóng góp, báo lỗi hoặc đề xuất cải tiến đều được hoan nghênh thông qua **Issues** hoặc **Pull Requests**.
+Any contributions, bug reports or improvement suggestions are welcome via **Issues** or **Pull Requests**.
 
 ---
