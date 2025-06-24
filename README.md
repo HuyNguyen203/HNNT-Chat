@@ -23,11 +23,11 @@ SUBJECT-PROJECT\_\_New-Technologies-in-IT-Application-Development/
 ### Backend
 
 - **Node.js**, **Express**
-- **Prisma ORM** với **PostgreSQL** hoặc **MySQL**
-- **JWT** cho xác thực
-- **Redis** cho pub/sub socket
-- **AWS S3** cho lưu trữ media
-- **Socket.io** cho realtime communication
+- **Prisma ORM** for **PostgreSQL** or **MySQL**
+- **JWT** for Authentication
+- **Redis** for pub/sub socket
+- **AWS S3** for storing media
+- **Socket.io** for realtime communication
 
 ---
 
