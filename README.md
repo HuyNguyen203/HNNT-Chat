@@ -35,9 +35,9 @@ SUBJECT-PROJECT\_\_New-Technologies-in-IT-Application-Development/
 
 - Node.js ≥ 18.x
 - PostgreSQL / MySQL
-- Redis (nếu dùng session hoặc Socket Pub/Sub)
-- AWS S3 Bucket (tùy chọn, nếu có upload media)
-- Expo Go (ứng dụng trên điện thoại để test mobile)
+- Redis (for session or Socket Pub/Sub)
+- AWS S3 Bucket (option, having upload media)
+- Expo Go (Mobile appliacation to test mobile)
 
 ---
 
@@ -52,7 +52,7 @@ npm install
 
 #### Set environment variables
 
-Tạo file `.env` trong `hnnt-chat-server/` dựa theo `.env.sample`. Cập nhật thông tin kết nối DB, JWT secret, Redis, AWS, v.v.
+Create file `.env` into `hnnt-chat-server/` follow `.env.sample`. config infomation of DB, JWT secret, Redis, AWS, v.v.
 
 #### Run migration
 
@@ -60,7 +60,7 @@ Tạo file `.env` trong `hnnt-chat-server/` dựa theo `.env.sample`. Cập nh�
 npx prisma migrate deploy
 ```
 
-> ✅ Lệnh này sẽ áp dụng toàn bộ migration SQL đã được tạo sẵn lên cơ sở dữ liệu.
+> ✅ This command run migration SQL to generate sample data.
 
 #### Seed sample data
 
@@ -68,7 +68,7 @@ npx prisma migrate deploy
 npm run seed
 ```
 
-#### Chạy server
+#### Run server
 
 ```bash
 npm start
